@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+body {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 62.5%;
+	margin: 0;
+
+	background-color: #f1f2f3;
+}
+
+header {
+	background-color: #121447;
+	color: white;
+	padding: 0 2em;
+	overflow: auto;
+}
+
+	header h1 {
+		font-size: 2.5em;
+		display: inline-block;
+		line-height: 5rem;
+	}
+
+	header a.logout {
+		color: white;
+		font-size: 1.6em;
+		display: inline-block;
+		text-decoration: none;
+
+		padding: 0.5em;
+		border: 1px solid white;
+		border-radius: 3px;
+		margin: 0 0.5em;
+		margin-left: 2em;
+	}
+
+	header a.logout:hover {
+		background-color: white;
+		color: #121447;
+	}
+
+	header p {
+		font-size: 1.6em;
+		display: inline;
+	}
+
+	header nav {
+		display: inline-block;
+		margin-right: 5em
+	}
+
+	header nav a {
+	    font-size: 1.8em;
+	    text-decoration: none;
+	    color: white;
+	    padding: 0 1em;
+	    line-height: 5rem;
+	    display: inline-block;
+	    transition: 0.3s ease;
+	}
+
+	header nav a:hover {
+		background-color: white;
+		background-color: rgba(255,255,255,0.2);
+		/*color: #121447;*/
+		transition: 0.3s ease;
+	}
+
+
+h2, h3 {
+	font-size: 2.25em;
+    color: #121447;
+    margin: 0.75rem;
+    font-weight: bold;
+}
+
+h3 {
+	font-size: 1.75em;
+}
+
+	h3 a {
+		color: #121447;
+	}
+
+	h3 a:hover {
+		color: #343794;
+	}
+
+
+/*Form styles*/
+
+fieldset {
+    background-color: white;
+    border: 2px solid #343794;
+    padding: 2%;
+}
+
+legend {
+	font-size: 2.25em;
+    color: #121447;
+    font-weight: bold;
+
+	margin-bottom: 1em;
+
+    float: left;
+    display: block;
+    clear: right;
+}
+
+label {
+	font-size: 1.6em;
+	display: block;
+	margin-bottom: 0.25em;
+
+    float: left;
+    clear: both;
+}
+
+input {
+	display: block;
+	margin-bottom: 1.25em;
+
+    float: left;
+    clear: both;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	padding: 0.5em 1.5em;
+}
+
+select {
+	margin-bottom: 1em;
+
+	float: left;
+    clear: both;
+}
+
+textarea {
+	margin-bottom: 1em;
+
+	float: left;
+    clear: both;
+
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+.delete_box {
+	float: left;
+	margin-top: 2em;
+	clear: both;
+}
+
+.delete_box input {
+	float: none;
+    display: inline;
+    margin-right: 1em;
+}
+
+
+/*Table styles*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+
+	font-size: 1.3em;
+	width: 100%;
+    margin-bottom: 3em;
+}
+
+	table img {
+		max-width: 200px;
+		height: auto;
+	}
+
+	thead {
+		background-color: #343794;
+		color: white;
+		border: 2px solid #343794;
+	}
+
+	tbody {
+		border: 2px solid #343794;
+		background-color: white;
+	}
+
+	th, td {
+		padding: 1%;
+		text-align: center;
+		line-height: 1.5em;
+
+		max-width: 30em;
+		min-width: 8em;
+	}
+
+	td {
+		border-bottom: 2px solid #343794;
+		padding: 3% 1%;
+	}
+
+	.game_name, .game_rating {
+	    font-size: 1.5em;
+	    font-weight: bold;
+	    color: #343794;
+	}
+
+	a.game_name {
+		text-decoration: underline;
+	}
+
+	a.game_name:hover {
+		color: #121447;
+	}
+
+	.game_rating {
+	    max-width: 5em;
+	}
+
+	td a { 
+	    text-decoration: none;
+	    border-radius: 3px;
+	    display: inline-block;
+	}
+
+	.delete_button {
+		color: red;
+		border: 1px solid red;
+		padding: 5%;
+	}
+
+	td a.delete_button:hover {
+	    color: white;
+	    background-color: red;
+	}
+
+	.comment_button {
+		color: #343794;
+		padding: 5%;
+	}
+
+	td a.comment_button:hover {
+	    text-decoration: underline;
+	}
+
+
+	.left_table th, .left_table td {
+		text-align: left;
+	}
+
+	.left_table th:first-child, .left_table td:first-child {
+		width: 20%;
+		padding-left: 1.5%;
+		text-align: center;
+	}
+
+	.left_table p.commenter_name {
+	    font-size: 1.4em;
+	    color: #343794;
+	    font-weight: bold;
+	    float: none;
+	}
+
+
+.user_header {
+	float: right;
+}
+
+.site_title {
+	float: left;
+}
+
+.content {
+	padding: 2em;
+	width: 90%;
+    margin: 0 auto;
+}
+
+.content p {
+	font-size: 1.6em;
+	display: block;
+
+	float: left;
+    clear: both;
+}
+
+.error_text {
+	color: red;
+	margin-bottom: 1em;
+}
